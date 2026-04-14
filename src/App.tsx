@@ -540,8 +540,8 @@ export default function App() {
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 overflow-hidden p-1">
             <img 
-              src="https://files.oaiusercontent.com/file-742508871338-mv74skzsrcoc2vt474kawq" 
-              alt="PAU Student Council Logo" 
+              src="/assets/images/STUDENT COUNCIL LOGO 01.wps.png" 
+              alt="STUDENT COUNCIL LOGO 01" 
               className="w-full h-full object-contain"
               referrerPolicy="no-referrer"
             />
