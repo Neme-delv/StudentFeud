@@ -298,7 +298,7 @@ export default function App() {
 
         {/* Answers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {Array.from({ length: 8 }).map((_, i) => (
+          {Array.from({ length: 6 }).map((_, i) => (
             <AnswerCard 
               key={i}
               index={i}
@@ -426,7 +426,7 @@ export default function App() {
           </div>
 
           <div className="space-y-4">
-            <label className="block text-xs font-bold text-blue-300/60 uppercase tracking-widest">Answers (Max 8)</label>
+            <label className="block text-xs font-bold text-blue-300/60 uppercase tracking-widest">Answers (Max 6)</label>
             {editingQuestion.answers.map((ans, idx) => (
               <div key={idx} className="flex gap-3">
                 <input 
@@ -461,7 +461,7 @@ export default function App() {
                 </button>
               </div>
             ))}
-            {editingQuestion.answers.length < 8 && (
+            {editingQuestion.answers.length < 6 && (
               <button 
                 onClick={() => setEditingQuestion({ ...editingQuestion, answers: [...editingQuestion.answers, { text: '', points: 0 }] })}
                 className="w-full py-3 border-2 border-dashed border-white/10 rounded-xl text-blue-300/40 hover:border-blue-500/40 hover:text-blue-400 transition-all font-bold text-sm"
@@ -538,8 +538,13 @@ export default function App() {
       {/* Header */}
       <header className="relative z-10 px-6 py-8 flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-            <LayoutDashboard className="text-white w-7 h-7" />
+          <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 overflow-hidden p-1">
+            <img 
+              src="https://files.oaiusercontent.com/file-742508871338-mv74skzsrcoc2vt474kawq" 
+              alt="PAU Student Council Logo" 
+              className="w-full h-full object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div>
             <h1 className="text-3xl font-black tracking-tighter uppercase italic">
